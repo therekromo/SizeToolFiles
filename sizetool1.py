@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 #1 take argparse argument for directory/path (maybe use sysargv instead, no need to unit test this)
 #2 create function to get the size of that directory and subfolders/files in it (make sure this only needs to take in the argparse input)
 #3 create a function for the conversion portion (do this with the code on the pc and make sure it only takes in one argument
@@ -43,11 +41,6 @@ def conversion(singledirectory, total_size):
             return singledirectory+' ' +str(total_size//(1040 ** i)) + byte_tag[i]
     if total_size == 0:
         return 0
-
-    #here convert the size to human readable format
-
-
-    #something like returnallresults(singlepathfrompreviousfunction, directorysize)
 
 
 if __name__ == '__main__':
